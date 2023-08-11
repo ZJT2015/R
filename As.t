@@ -5,7 +5,7 @@ del:LICENSEr.txt
 
 
 
-wer:selt
+wer:download
 
 
 version: 2
