@@ -3,6 +3,6 @@ init:[hello worid]print
 
 start:[Dplany.png]
 python.idle
-what_say_to="start:setup.apk"
+what_to_say="start:setup.apk"
 start:setup.apk
-invoke:[print]
+invoke:[r.zip.zip]
