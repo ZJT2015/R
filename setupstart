@@ -1,0 +1,8 @@
+init:[hello worid]print
+
+
+start:[Dplany.png]
+python.idle
+what_say_to="start:setup.apk"
+start:setup.apk
+invoke:[print]
