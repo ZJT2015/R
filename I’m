@@ -1,0 +1,42 @@
+import pyflutter as pf
+
+
+# define the application class, which needs to extended from UIApp class 
+class MyApp(pf.UIApp):
+
+    # subclasses can override this method to initialize the state of the app
+    def init(self):
+        self.count = 0
+
+    def onPressed(self):
+        self.count += 1
+        # Call this method every time the UI needs to be refreshed
+        self.markNeedsRender()
+
+    # subclasses need to overrride this method to generate a description of the UI
+    def build(self):
+        return pf.Scaffold(
+            appBar=pf.AppBar(
+                title=pf.Text(
+                    text = 'Exmaple'
+                )
+            ),
+            body=pf.Center(
+                child=pf.Text(
+                    text=f'preseed count: {self.count}'
+                )
+            ),
+            floatingActionButton=pf.FloatingActionButton(
+                child=pf.Icon(icon=pf.Icons.add),
+                tooltip='Press',
+                onPressed=self.onPressed
+            )
+        )
+    
+    # subclasses can override this method to clean up app resources
+    def dispose(self):
+        pass
+
+
+# start running the app
+pf.runUIApp(MyApp())
