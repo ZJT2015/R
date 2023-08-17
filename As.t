@@ -1,63 +1,20 @@
-python.idie
->>>what_to_say="del:LICENSEr.txt"
-del:LICENSEr.txt
+import numpy as np
+from matplotlib import pyplot as plt
+
+x = np.linspace(-2, 2, 100)
+y1 = np.cos(np.pi * x)
+y2 = np.sin(np.pi * x)
+
+plt.plot(x, y1, 'go')
+plt.plot(x, y2, 'r-')
+
+plt.xlabel('xlabel')
+plt.ylabel('ylabel')
 
 
 
+plt.grid(alpha=0.4)
 
-wer:download
+plt.title('sin-cos')
 
-
-version: 2
-updates:
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "monthly"
-
-
-
-
-ert:thgfuiop
-
-
-# Compiled source #
-###################
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
-
-# Packages #
-############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
-
-# Logs and databases #
-######################
-*.log
-*.sql
-*.sqlite
-
-# OS generated files #
-######################
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-var.tout
-stop
+plt.show()
